@@ -229,6 +229,10 @@ body {
     font-size:10px;  
 }
 
+.active-link a{
+    color: #5dc5ab;
+}
+
 .nav-bar__item h4{
     padding: 1.2rem 0;
     margin: 0;

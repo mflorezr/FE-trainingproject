@@ -4,7 +4,6 @@ var nav = document.querySelector(".nav-bar");
 var questions = document.querySelectorAll(".question");
 var main = document.querySelector("main");
 var slideIndex = 1;
-var sectionIndex=0;
 
 
 //Show the first testimonial slider of every device
@@ -14,6 +13,38 @@ if(($(testimonial).is(" :hidden"))){
 else{
     showSlides(slideIndex=1);
 }
+
+
+// Allows to change font color of nav-bar items depending of the page section
+var controller = new ScrollMagic.Controller({ globalSceneOptions: { duration: "100%" } });
+
+new ScrollMagic.Scene({ triggerElement: "#carrousel-images" })
+    .setClassToggle("#home-link", "active-link") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#services" })
+    .setClassToggle("#services-link", "active-link") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#about" })
+    .setClassToggle("#about-link", "active-link") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#team-members" })
+    .setClassToggle("#team-link", "active-link") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#portafolio" })
+    .setClassToggle("#portafolio-link", "active-link") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#blog" })
+    .setClassToggle("#blog-link", "active-link") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#asked-questions" })
+    .setClassToggle("#blog-link", "active-link") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#testimonial" })
+    .setClassToggle("#blog-link", "active-link") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#contact" })
+    .setClassToggle("#contact-link", "active-link") // add class toggle
+    .addTo(controller);
 
 
 function currentSlide(n) {
@@ -36,21 +67,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";  
   
   dots[slideIndex-1].className += " active";
-}
-
-function currentSection(n) {
-    showSections(sectionIndex = n);
-}
-
-
-// Allows to change font color of nav-bar items depending of the page section
-function showSections(n) {
-    var i;
-    var sectioni = document.getElementsByClassName("nav-bar__item");
-    for (i = 0; i < sectioni.length; i++) {
-        sectioni[i].className = sectioni[i].className.replace(" active-section", "");
-    }
-    sectioni[sectionIndex].className += " active-section";  
 }
 
 
