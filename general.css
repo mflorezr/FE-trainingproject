@@ -670,6 +670,10 @@ textarea, input{
     border:1px solid white;
 }
 
+.contact-button__sub:focus{
+    outline: none;
+}
+
 footer { 
     margin: 0 1rem;
     padding: 3.5rem 0;
