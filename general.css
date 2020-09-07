@@ -958,16 +958,12 @@ footer {
     
     .blog-comment:active ,
     .blog-comment:hover {
-        background: url("images/hover-image.jpg") no-repeat;
-        background-size: cover;
         background-position: bottom -1rem left 0;
     }
     
     .blog-comment__exception .blog-comment:active, 
     .blog-comment__exception .blog-comment:hover{
-        background: url("images/hover-image.jpg") no-repeat;
         background-size: cover;
-        background-position: bottom -1rem left 0;
     }
 
 }
