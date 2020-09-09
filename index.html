@@ -2,812 +2,760 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talos Template</title>
-
-    <link rel="stylesheet" href="general.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talos Template</title>
+  <link rel="stylesheet" href="general.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
-    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
-        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-            <symbol id="icon-google-plus" viewBox="0 0 32 32">
-                <path
-                    d="M10.181 14.294v3.494h5.775c-0.231 1.5-1.744 4.394-5.775 4.394-3.475 0-6.313-2.881-6.313-6.431s2.838-6.431 6.313-6.431c1.981 0 3.3 0.844 4.056 1.569l2.762-2.662c-1.775-1.656-4.075-2.662-6.819-2.662-5.631 0.006-10.181 4.556-10.181 10.188s4.55 10.181 10.181 10.181c5.875 0 9.775-4.131 9.775-9.95 0-0.669-0.075-1.181-0.163-1.688h-9.613z">
-                </path>
-                <path d="M32 14h-3v-3h-3v3h-3v3h3v3h3v-3h3z"></path>
-            </symbol>
-            <symbol id="icon-facebook" viewBox="0 0 32 32">
-                <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
-            </symbol>
-            <symbol id="icon-twitter" viewBox="0 0 32 32">
-                <path
-                    d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z">
-                </path>
-            </symbol>
-            <symbol id="icon-dribbble" viewBox="0 0 32 32">
-                <path
-                    d="M16 32c-8.825 0-16-7.175-16-16s7.175-16 16-16c8.825 0 16 7.175 16 16s-7.175 16-16 16v0zM29.494 18.188c-0.469-0.15-4.231-1.269-8.512-0.581 1.788 4.912 2.512 8.912 2.656 9.744 3.063-2.075 5.25-5.356 5.856-9.163v0zM21.337 28.6c-0.206-1.2-0.994-5.375-2.913-10.363-0.031 0.012-0.063 0.019-0.087 0.031-7.713 2.688-10.481 8.031-10.725 8.531 2.319 1.806 5.231 2.887 8.387 2.887 1.894 0 3.7-0.387 5.338-1.087v0zM5.844 25.156c0.313-0.531 4.063-6.738 11.106-9.019 0.175-0.056 0.356-0.113 0.538-0.162-0.344-0.775-0.719-1.556-1.106-2.319-6.819 2.044-13.444 1.956-14.044 1.95-0.006 0.137-0.006 0.275-0.006 0.419 0 3.506 1.331 6.712 3.512 9.131v0zM2.625 13.219c0.612 0.006 6.244 0.031 12.637-1.662-2.262-4.025-4.706-7.412-5.069-7.906-3.825 1.806-6.688 5.331-7.569 9.569v0zM12.8 2.731c0.375 0.506 2.863 3.888 5.1 8 4.863-1.819 6.919-4.588 7.163-4.938-2.413-2.144-5.587-3.444-9.063-3.444-1.1 0.006-2.175 0.138-3.2 0.381v0zM26.581 7.381c-0.288 0.388-2.581 3.325-7.631 5.388 0.319 0.65 0.625 1.313 0.906 1.981 0.1 0.238 0.2 0.469 0.294 0.706 4.55-0.569 9.069 0.344 9.519 0.438-0.031-3.225-1.188-6.188-3.087-8.512v0z">
-                </path>
-            </symbol>
-            <symbol id="icon-behance" viewBox="0 0 32 32">
-                <path
-                    d="M9.281 6.412c0.944 0 1.794 0.081 2.569 0.25 0.775 0.162 1.431 0.438 1.988 0.813 0.55 0.375 0.975 0.875 1.287 1.5 0.3 0.619 0.45 1.394 0.45 2.313 0 0.994-0.225 1.819-0.675 2.481-0.456 0.662-1.119 1.2-2.006 1.625 1.213 0.35 2.106 0.962 2.706 1.831 0.6 0.875 0.887 1.925 0.887 3.163 0 1-0.194 1.856-0.575 2.581-0.387 0.731-0.912 1.325-1.556 1.781-0.65 0.462-1.4 0.8-2.237 1.019-0.831 0.219-1.688 0.331-2.575 0.331h-9.544v-19.688h9.281zM8.719 14.363c0.769 0 1.406-0.181 1.906-0.55 0.5-0.363 0.738-0.963 0.738-1.787 0-0.456-0.081-0.838-0.244-1.131-0.169-0.294-0.387-0.525-0.669-0.688-0.275-0.169-0.588-0.281-0.956-0.344-0.356-0.069-0.731-0.1-1.113-0.1h-4.050v4.6h4.388zM8.956 22.744c0.425 0 0.831-0.038 1.213-0.125 0.387-0.087 0.731-0.219 1.019-0.419 0.287-0.194 0.531-0.45 0.706-0.788 0.175-0.331 0.256-0.756 0.256-1.275 0-1.012-0.287-1.738-0.856-2.175-0.569-0.431-1.325-0.644-2.262-0.644h-4.7v5.419h4.625z">
-                </path>
-                <path
-                    d="M22.663 22.675c0.587 0.575 1.431 0.863 2.531 0.863 0.788 0 1.475-0.2 2.044-0.6s0.913-0.825 1.044-1.262h3.45c-0.556 1.719-1.394 2.938-2.544 3.675-1.131 0.738-2.519 1.113-4.125 1.113-1.125 0-2.131-0.181-3.038-0.538-0.906-0.363-1.663-0.869-2.3-1.531-0.619-0.663-1.106-1.45-1.45-2.375-0.337-0.919-0.512-1.938-0.512-3.038 0-1.069 0.175-2.063 0.525-2.981 0.356-0.925 0.844-1.719 1.494-2.387s1.413-1.2 2.313-1.588c0.894-0.387 1.881-0.581 2.975-0.581 1.206 0 2.262 0.231 3.169 0.706 0.9 0.469 1.644 1.1 2.225 1.887s0.994 1.694 1.25 2.706c0.256 1.012 0.344 2.069 0.275 3.175h-10.294c0 1.119 0.375 2.188 0.969 2.756zM27.156 15.188c-0.462-0.512-1.256-0.794-2.212-0.794-0.625 0-1.144 0.106-1.556 0.319-0.406 0.213-0.738 0.475-0.994 0.787-0.25 0.313-0.425 0.65-0.525 1.006-0.1 0.344-0.163 0.663-0.181 0.938h6.375c-0.094-1-0.438-1.738-0.906-2.256z">
-                </path>
-                <path d="M20.887 8h7.981v1.944h-7.981v-1.944z"></path>
-                <symbol id="icon-github" viewBox="0 0 32 32">
-                    <path
-                        d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z">
-                    </path>
-                </symbol>
-                <symbol id="icon-link" viewBox="0 0 32 32">
-                    <path
-                        d="M13.757 19.868c-0.416 0-0.832-0.159-1.149-0.476-2.973-2.973-2.973-7.81 0-10.783l6-6c1.44-1.44 3.355-2.233 5.392-2.233s3.951 0.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743c-0.635 0.635-1.663 0.635-2.298 0s-0.635-1.663 0-2.298l2.743-2.743c1.706-1.706 1.706-4.481 0-6.187-0.826-0.826-1.925-1.281-3.094-1.281s-2.267 0.455-3.094 1.281l-6 6c-1.706 1.706-1.706 4.481 0 6.187 0.635 0.635 0.635 1.663 0 2.298-0.317 0.317-0.733 0.476-1.149 0.476z">
-                    </path>
-                    <path
-                        d="M8 31.625c-2.037 0-3.952-0.793-5.392-2.233-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743c0.635-0.635 1.664-0.635 2.298 0s0.635 1.663 0 2.298l-2.743 2.743c-1.706 1.706-1.706 4.481 0 6.187 0.826 0.826 1.925 1.281 3.094 1.281s2.267-0.455 3.094-1.281l6-6c1.706-1.706 1.706-4.481 0-6.187-0.635-0.635-0.635-1.663 0-2.298s1.663-0.635 2.298 0c2.973 2.973 2.973 7.81 0 10.783l-6 6c-1.44 1.44-3.355 2.233-5.392 2.233z">
-                    </path>
-                </symbol>
-        </defs>
-    </svg>
-
-    <header>
-        <div id="carrousel-images" class="carrousel-images">
-            <div class='slide1'>
-
-            </div>
-            <div class='slide2'>
-
-            </div>
-
-            <div class="text-header">
-                <h1>Genius Web & Talos Inc.</h1>
-                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus auge
-                    vulputate
-                    voluptate neque, curabitur dolor libero sodales</p>
-                <div class="buttons">
-                    <button class="learn-more__but">LEARN MORE</button>
-                    <a href="#contact"><button class="contact__but">CONTACT US</button></a>
-
-                </div>
-
-            </div>
+  <header>
+    <div id="carrousel-images" class="carrousel-images">
+      <div class="firstSlide">
+      </div>
+      <div class="secondSlide">
+      </div>
+      <div class="text-header">
+        <h1 class="main-title">Genius Web & Talos Inc.</h1>
+        <p class="main-paragraph">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus
+          auge
+          vulputate
+          voluptate neque, curabitur dolor libero sodales
+        </p>
+        <div class="buttons">
+          <button class="learn-more-but">LEARN MORE</button>
+          <a href="#contact"><button class="contact-but">CONTACT US</button></a>
         </div>
-
-    </header>
-    <div id="home" class="main-nav">
-        <div class="nav-brand">
-            <h1>Talos</h1>
-            <button class="toggle-but">
-                <span class="toggle-but__bar"></span>
-                <span class="toggle-but__bar"></span>
-                <span class="toggle-but__bar"></span>
-            </button>
-        </div>
-        <nav class="nav-bar">
-            <ul class="nav-bar__items">
-                <li id="home-link" class="nav-bar__item"><a href="#carrousel-images">
-                        <h4>HOME</h4>
-                    </a></li>
-                <li id="services-link" class="nav-bar__item"><a href="#services">
-                        <h4>SERVICES</h4>
-                    </a></li>
-                <li id="about-link" class="nav-bar__item"><a href="#about">
-                        <h4>ABOUT</h4>
-                    </a></li>
-                <li id="team-link" class="nav-bar__item"><a href="#team-members">
-                        <h4>TEAM</h4>
-                    </a></li>
-                <li id="portafolio-link" class="nav-bar__item"><a href="#portafolio">
-                        <h4>PORTAFOLIO</h4>
-                    </a></li>
-                <li id="blog-link" class="nav-bar__item"><a href="#blog">
-                        <h4>BLOG</h4>
-                    </a></li>
-                <li id="contact-link" class="nav-bar__item"><a href="#contact">
-                        <h4>CONTACT</h4>
-                    </a></li>
-            </ul>
-        </nav>
+      </div>
     </div>
-    <main>
-        <section id="services" class="section-white">
-            <div class="text-left">
-                <h1>What we do</h1>
-                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
-            </div>
-            <div class="services-items">
-                <div class="service__item">
-                    <div class="glyph">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
-                    </div>
-                    <div class="service-text">
-                        <h1 class="service-text__title">Brand Identity</h1>
-                        <p class="service-text__description">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo
-                            imperdiet, wisi risus purus auge
-                            vulputate
-                            voluptate neque, curabitur dolor libero sodales vitae elit massa</p>
-                    </div>
-                </div>
-                <div class="service__item">
-                    <div class="glyph">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe01b;"></div>
-                    </div>
-                    <div class="service-text">
-                        <h1 class="service-text__title">Web Design</h1>
-                        <p class="service-text__description">
-                            You can easily change icons by looking at <a href="" class="et-line">ET Line Icons</a>. wisi
-                            risus purus auge
-                            vulputate
-                            voluptate neque, curabitur dolor libero sodales vitae elit massa
-                        </p>
-                    </div>
-                </div>
-                <div class="service__item">
-                    <div class="glyph">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe04b;"></div>
-                    </div>
-                    <div class="service-text">
-                        <h1 class="service-text__title">Social Marketing</h1>
-                        <p class="service-text__description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                            justo
-                            imperdiet, wisi risus purus auge
-                            vulputate
-                            voluptate neque, curabitur dolor libero sodales vitae elit massa</p>
-                    </div>
-                </div>
-                <div class="service__item">
-                    <div class="glyph">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe027;"></div>
-                    </div>
-                    <div class="service-text">
-                        <h1 class="service-text__title">CMS & eCommerce</h1>
-                        <p class="service-text__description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                            justo
-                            imperdiet, wisi risus purus auge
-                            vulputate
-                            voluptate neque, curabitur dolor libero sodales vitae elit massa</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section id="about" class="section-gray section-about">
-            <div class="text-left">
-                <h1>Genius Studio</h1>
-                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                    justo
-                    imperdiet, wisi risus purus auge
-                    vulputate
-                    voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet,
-                    maecenas
-                    eget vestibulum
-                    justo
-                    imperdiet, wisi risus purus auge
-                    vulputate
-                    voluptate neque, curabitur dolor libero sodales vitae elit massa.<br> Lorem ipsum dolor sit amet,
-                    maecenas eget vestibulum
-                    justo
-                    imperdiet, wisi risus purus auge
-                    vulputate
-                    voluptate neque, curabitur dolor libero sodales vitae elit massa</p>
-            </div>
-            <iframe class="about__video" width="330" height="180" src="https://www.youtube.com/embed/2ZKV6B03I0s"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </section>
-        <section id="team-members" class="section-white">
-            <div class="text-center">
-                <h1>team member</h1>
-                <p> Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                    justo
-                    imperdiet</p>
-            </div>
-            <div class="team">
-                <div class="team-member">
-                    <div class="team-image__container">
-                        <img src="images/team_1.jpg" alt="Johnathan">
-                        <div class="team-contact__icons">
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-facebook">
-                                    <use xlink:href="#icon-facebook"></use>
-                                </svg>
-                            </div>
-
-
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-twitter">
-                                    <use xlink:href="#icon-twitter"></use>
-                                </svg>
-                            </div>
-
-
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-dribbble">
-                                    <use xlink:href="#icon-dribbble"></use>
-                                </svg>
-                            </div>
-
-
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-behance">
-                                    <use xlink:href="#icon-behance"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="team-member__name">Johnathan Doe</h2>
-                    <h3 class="team-member__job">Designer</h3>
-                </div>
-                <div class="team-member">
-                    <div class="team-image__container">
-                        <img src="images/team_2.jpg" alt="Johnathan">
-                        <div class="team-contact__icons">
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-facebook">
-                                    <use xlink:href="#icon-facebook"></use>
-                                </svg>
-                            </div>
-
-
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-twitter">
-                                    <use xlink:href="#icon-twitter"></use>
-                                </svg>
-                            </div>
-
-
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-dribbble">
-                                    <use xlink:href="#icon-dribbble"></use>
-                                </svg>
-                            </div>
-
-
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-behance">
-                                    <use xlink:href="#icon-behance"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="team-member__name">Jenny L Martian</h2>
-                    <h3 class="team-member__job">UX Designer</h3>
-                </div>
-                <div class="team-member">
-                    <div class="team-image__container">
-                        <img src="images/team_3.jpg" alt="Johnathan">
-                        <div class="team-contact__icons">
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-facebook">
-                                    <use xlink:href="#icon-facebook"></use>
-                                </svg>
-                            </div>
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-twitter">
-                                    <use xlink:href="#icon-twitter"></use>
-                                </svg>
-                            </div>
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-dribbble">
-                                    <use xlink:href="#icon-dribbble"></use>
-                                </svg>
-                            </div>
-                            <div class="clearfix pbs">
-                                <svg class="icon icon-behance">
-                                    <use xlink:href="#icon-behance"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="team-member__name">James David Doe</h2>
-                    <h3 class="team-member__job">Creative Director</h3>
-                </div>
-            </div>
-        </section>
-        <section id="portafolio" class="section-gray">
-            <div class="text-center">
-                <h1>Lastest Work</h1>
-                <p> Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                    justo
-                    imperdiet</p>
-            </div>
-
-            <div class="portafolio-images">
-                <div class="team-image__container">
-                    <img src="images/portfolio-img1.jpg" alt="Johnathan">
-                    <div class="portafolio-ilustration">
-                        <div class="portafolio-ilustration__content">
-                            <div class="portafolio-icon">
-                                <svg class="icon icon-link">
-                                    <use xlink:href="#icon-link"></use>
-                                </svg>
-                            </div>
-                            <h1>Ilustration</h1>
-                            <h3>Graphic / Ilustration / Poster</h3>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="team-image__container">
-                    <img src="images/portfolio-img2.jpg" alt="Johnathan">
-                    <div class="portafolio-ilustration">
-                        <div class="portafolio-ilustration__content">
-                            <div class="portafolio-icon">
-                                <svg class="icon icon-link">
-                                    <use xlink:href="#icon-link"></use>
-                                </svg>
-                            </div>
-                            <h1>Ilustration</h1>
-                            <h3>Graphic / Ilustration / Poster</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-image__container">
-                    <img src="images/portfolio-img3.jpg" alt="Johnathan">
-                    <div class="portafolio-ilustration">
-                        <div class="portafolio-ilustration__content">
-                            <div class="portafolio-icon">
-                                <svg class="icon icon-link">
-                                    <use xlink:href="#icon-link"></use>
-                                </svg>
-                            </div>
-                            <h1>Ilustration</h1>
-                            <h3>Graphic / Ilustration / Poster</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-image__container">
-                    <img src="images/portfolio-img4.jpg" alt="Johnathan">
-                    <div class="portafolio-ilustration">
-                        <div class="portafolio-ilustration__content">
-                            <div class="portafolio-icon">
-                                <svg class="icon icon-link">
-                                    <use xlink:href="#icon-link"></use>
-                                </svg>
-                            </div>
-                            <h1>Ilustration</h1>
-                            <h3>Graphic / Ilustration / Poster</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-image__container">
-                    <img src="images/portfolio-img5.jpg" alt="Johnathan">
-                    <div class="portafolio-ilustration">
-                        <div class="portafolio-ilustration__content">
-                            <div class="portafolio-icon">
-                                <svg class="icon icon-link">
-                                    <use xlink:href="#icon-link"></use>
-                                </svg>
-                            </div>
-                            <h1>Ilustration</h1>
-                            <h3>Graphic / Ilustration / Poster</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-image__container">
-                    <img src="images/portfolio-img6.jpg" alt="Johnathan">
-                    <div class="portafolio-ilustration">
-                        <div class="portafolio-ilustration__content">
-                            <div class="portafolio-icon">
-                                <svg class="icon icon-link">
-                                    <use xlink:href="#icon-link"></use>
-                                </svg>
-                            </div>
-                            <h1>Ilustration</h1>
-                            <h3>Graphic / Ilustration / Poster</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="blog" class="section-white">
-            <div class="text-center">
-                <h1>Our Blog</h1>
-                <p> Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                    justo
-                    imperdiet</p>
-            </div>
-            <div class="blog-comments">
-                <div class="blog-comment">
-                    <h3 class="blog-comment__date">Online Business/Dec 9,2016</h3>
-                    <h1 class="blog-comment__description"> The best way to make Online Business</h1>
-                    <h3 class="blog-comment__author">By Johnathan Doe</h3>
-                </div>
-                <div class="blog-comment">
-                    <h3 class="blog-comment__date">Frontend Dev/Dec 9,2016</h3>
-                    <h1 class="blog-comment__description"> Frontend Developer Vs UI Designer</h1>
-                    <h3 class="blog-comment__author">By Johnny James</h3>
-                </div>
-                <div class="blog-comment__exception">
-                    <div class="blog-comment">
-                        <h3 class="blog-comment__date">Social Marketing/Dec 9,2016</h3>
-                        <h1 class="blog-comment__description"> What is Social Marketing Business</h1>
-                        <h3 class="blog-comment__author">By Mary Louis</h3>
-                    </div>
-                    <div class="blog-comment">
-                        <h3 class="blog-comment__date">Web Design/Dec 9,2016</h3>
-                        <h1 class="blog-comment__description"> How to become Web Designer</h1>
-                        <h3 class="blog-comment__author">By David Jenn</h3>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section id="asked-questions" class="asked-questions section-gray">
-            <div class="text-center">
-                <h1>Asked Questions</h1>
-                <p> Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                    justo
-                    imperdiet</p>
-            </div>
-            <div class="questions">
-                <div class="question">
-                    <div class="question-glyph">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe001;&nbsp;&nbsp;">
-                            How to make Brand Identity?
-                        </div>
-                    </div>
-                    <div class="question-answer">
-                        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                            justo
-                            imperdiet, wisi risus purus auge
-                            vulputate
-                            voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
-                            amet,
-                            maecenas
-                            eget vestibulum
-                            justo
-                            imperdiet.</p>
-                        <p>Lorem ipsum dolor sit amet,
-                            maecenas
-                            eget vestibulum
-                            justo
-                            imperdiet</p>
-                    </div>
-                </div>
-                <div class="question">
-                    <div class="question-glyph">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe01b;&nbsp;&nbsp;">
-                            What is Web Design?
-                        </div>
-                    </div>
-                    <div class="question-answer">
-                        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                            justo
-                            imperdiet, wisi risus purus auge
-                            vulputate
-                            voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
-                            amet,
-                            maecenas
-                            eget vestibulum
-                            justo
-                            imperdiet.</p>
-                        <p>Lorem ipsum dolor sit amet,
-                            maecenas
-                            eget vestibulum
-                            justo
-                            imperdiet</p>
-                    </div>
-                </div>
-                <div class="question">
-                    <div class="question-glyph">
-                        <div class="fs1" aria-hidden="true" data-icon="&#xe04b;&nbsp;&nbsp;">
-                            Why Important Social Marketing?
-                        </div>
-                    </div>
-                    <div class="question-answer">
-                        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                            justo
-                            imperdiet, wisi risus purus auge
-                            vulputate
-                            voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
-                            amet,
-                            maecenas
-                            eget vestibulum
-                            justo
-                            imperdiet.</p>
-                        <p>Lorem ipsum dolor sit amet,
-                            maecenas
-                            eget vestibulum
-                            justo
-                            imperdiet</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section id="testimonial" class="testimonial section-white">
-            <div class="text-center">
-                <h1>Testimonial Words</h1>
-                <p> Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                    justo
-                    imperdiet</p>
-            </div>
-
-            <div class="testimonial-1">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <div class="testimony__photo-container">
-                            <img src="images/testimonial-img1.jpg" alt="Johnathan Doe">
-                        </div>
-                        <div class="testimony__text">
-                            <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                                justo
-                                imperdiet, wisi risus purus auge
-                                vulputate
-                                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
-                                amet</div>
-                            <div class="testimony__author"> Johnathan Doe</div>
-                        </div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="testimony__photo-container">
-                            <img src="images/testimonial-img2.jpg" alt="Johnathan Doe">
-                        </div>
-                        <div class="testimony__text">
-                            <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                                justo
-                                imperdiet, wisi risus purus auge
-                                vulputate
-                                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
-                                amet</div>
-                            <div class="testimony__author"> Jennie Hennings</div>
-                        </div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="testimony__photo-container">
-                            <img src="images/testimonial-img3.jpg" alt="Johnathan Doe">
-                        </div>
-                        <div class="testimony__text">
-                            <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                                justo
-                                imperdiet, wisi risus purus auge
-                                vulputate
-                                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
-                                amet</div>
-                            <div class="testimony__author"> James Autor</div>
-                        </div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="testimony__photo-container">
-                            <img src="images/testimonial-img1.jpg" alt="Johnathan Doe">
-                        </div>
-                        <div class="testimony__text">
-                            <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                                justo
-                                imperdiet, wisi risus purus auge
-                                vulputate
-                                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
-                                amet</div>
-                            <div class="testimony__author"> Johnathan Doe</div>
-                        </div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="testimony__photo-container">
-                            <img src="images/testimonial-img2.jpg" alt="Johnathan Doe">
-                        </div>
-                        <div class="testimony__text">
-                            <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                                justo
-                                imperdiet, wisi risus purus auge
-                                vulputate
-                                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
-                                amet</div>
-                            <div class="testimony__author"> Jennie Hennings</div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
-            </div>
-            <div class="testimonial-2">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <div class="testimony__item">
-                            <div class="testimony">
-                                <div class="testimony__photo-container">
-                                    <img src="images/testimonial-img1.jpg" alt="Johnathan Doe">
-                                </div>
-                                <div class="testimony__text">
-                                    <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget
-                                        vestibulum
-                                        justo
-                                        imperdiet, wisi risus purus auge
-                                        vulputate
-                                        voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
-                                        dolor
-                                        sit
-                                        amet</div>
-                                    <div class="testimony__author"> Johnathan Doe</div>
-                                </div>
-                            </div>
-                            <div class="testimony">
-                                <div class="testimony__photo-container">
-                                    <img src="images/testimonial-img2.jpg" alt="Johnathan Doe">
-                                </div>
-                                <div class="testimony__text">
-                                    <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget
-                                        vestibulum
-                                        justo
-                                        imperdiet, wisi risus purus auge
-                                        vulputate
-                                        voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
-                                        dolor
-                                        sit
-                                        amet</div>
-                                    <div class="testimony__author"> Johnny David</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="testimony__item">
-                            <div class="testimony">
-                                <div class="testimony__photo-container">
-                                    <img src="images/testimonial-img3.jpg" alt="Johnathan Doe">
-                                </div>
-                                <div class="testimony__text">
-                                    <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget
-                                        vestibulum
-                                        justo
-                                        imperdiet, wisi risus purus auge
-                                        vulputate
-                                        voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
-                                        dolor
-                                        sit
-                                        amet</div>
-                                    <div class="testimony__author"> James Autor</div>
-                                </div>
-                            </div>
-                            <div class="testimony">
-                                <div class="testimony__photo-container">
-                                    <img src="images/testimonial-img1.jpg" alt="Johnathan Doe">
-                                </div>
-                                <div class="testimony__text">
-                                    <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget
-                                        vestibulum
-                                        justo
-                                        imperdiet, wisi risus purus auge
-                                        vulputate
-                                        voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
-                                        dolor
-                                        sit
-                                        amet</div>
-                                    <div class="testimony__author"> Johnathan Doe</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="testimony__item">
-                            <div class="testimony">
-                                <div class="testimony__photo-container">
-                                    <img src="images/testimonial-img2.jpg" alt="Johnathan Doe">
-                                </div>
-                                <div class="testimony__text">
-                                    <div class="testimony__description">Lorem ipsum dolor sit amet, maecenas eget
-                                        vestibulum
-                                        justo
-                                        imperdiet, wisi risus purus auge
-                                        vulputate
-                                        voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
-                                        dolor
-                                        sit
-                                        amet</div>
-                                    <div class="testimony__author"> Johnny David</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
-                </div>
-            </div>
-
-        </section>
-        <section id="contact" class="section-gray">
-            <div class="text-center">
-                <h1>Get in touch</h1>
-                <p> Lorem ipsum dolor sit amet, maecenas eget vestibulum
-                    justo
-                    imperdiet</p>
-            </div>
-            <div class="contact-form">
-                <div class="input-text">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Phone">
-                </div>
-                <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
-            </div>
-            <button type="submit" class="contact-button__sub">SHOOT MESSAGE</button>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <h4 class="copyright">Copyright© Talos HTML Template| All Rights Reserved.</h4>
+  </header>
+  <div id="home" class="main-nav">
+    <div class="nav-brand">
+      <h3 class="nav-brand-name">Talos</h3>
+      <button class="toggle-but">
+        <span class="toggle-but-bar"></span>
+        <span class="toggle-but-bar"></span>
+        <span class="toggle-but-bar"></span>
+      </button>
+    </div>
+    <nav class="nav-bar">
+      <ul class="nav-bar-items">
+        <li id="home-link" class="nav-bar-item">
+          <a class="item-link" href="#carrousel-images">
+            <h4 class="item-font">HOME</h4>
+          </a>
+        </li>
+        <li id="services-link" class="nav-bar-item">
+          <a class="item-link" href="#services">
+            <h4 class="item-font">SERVICES</h4>
+          </a>
+        </li>
+        <li id="about-link" class="nav-bar-item">
+          <a class="item-link" href="#about">
+            <h4 class="item-font">ABOUT</h4>
+          </a>
+        </li>
+        <li id="team-link" class="nav-bar-item">
+          <a class="item-link" href="#team-members">
+            <h4 class="item-font">TEAM</h4>
+          </a>
+        </li>
+        <li id="portafolio-link" class="nav-bar-item">
+          <a class="item-link" href="#portafolio">
+            <h4 class="item-font">PORTAFOLIO</h4>
+          </a>
+        </li>
+        <li id="blog-link" class="nav-bar-item">
+          <a class="item-link" href="#blog">
+            <h4 class="item-font">BLOG</h4>
+          </a>
+        </li>
+        <li id="contact-link" class="nav-bar-item">
+          <a class="item-link" href="#contact">
+            <h4 class="item-font">CONTACT</h4>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section id="services" class="section-white">
+      <div class="text-left">
+        <h2 class="text-left-title">What we do</h2>
+        <p class="text-left-paragraph"> Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
+      </div>
+      <div class="services-items">
+        <div class="service-item">
+          <div class="glyph">
+            <div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
+          </div>
+          <div class="service-text">
+            <h1 class="service-text-title">Brand Identity</h1>
+            <p class="service-text-description">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo
+              imperdiet, wisi risus purus auge
+              vulputate
+              voluptate neque, curabitur dolor libero sodales vitae elit massa
+            </p>
+          </div>
         </div>
-        <div class="footer-icons">
-
-            <div class="clearfix pbs">
+        <div class="service-item">
+          <div class="glyph">
+            <div class="fs1" aria-hidden="true" data-icon="&#xe01b;"></div>
+          </div>
+          <div class="service-text">
+            <h1 class="service-text-title">Web Design</h1>
+            <p class="service-text-description">
+              You can easily change icons by looking at <a href="" class="et-line">ET Line Icons</a>. wisi
+              risus purus auge
+              vulputate
+              voluptate neque, curabitur dolor libero sodales vitae elit massa
+            </p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="glyph">
+            <div class="fs1" aria-hidden="true" data-icon="&#xe04b;"></div>
+          </div>
+          <div class="service-text">
+            <h1 class="service-text-title">Social Marketing</h1>
+            <p class="service-text-description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
+              justo
+              imperdiet, wisi risus purus auge
+              vulputate
+              voluptate neque, curabitur dolor libero sodales vitae elit massa
+            </p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="glyph">
+            <div class="fs1" aria-hidden="true" data-icon="&#xe027;"></div>
+          </div>
+          <div class="service-text">
+            <h1 class="service-text-title">CMS & eCommerce</h1>
+            <p class="service-text-description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
+              justo
+              imperdiet, wisi risus purus auge
+              vulputate
+              voluptate neque, curabitur dolor libero sodales vitae elit massa
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section-gray section-about">
+      <div class="text-left">
+        <h2 class="text-left-title">Genius Studio</h2>
+        <p class="text-left-paragraph">Lorem ipsum dolor sit amet, maecenas eget vestibulum
+          justo
+          imperdiet, wisi risus purus auge
+          vulputate
+          voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet,
+          maecenas
+          eget vestibulum
+          justo
+          imperdiet, wisi risus purus auge
+          vulputate
+          voluptate neque, curabitur dolor libero sodales vitae elit massa.<br> Lorem ipsum dolor sit amet,
+          maecenas eget vestibulum
+          justo
+          imperdiet, wisi risus purus auge
+          vulputate
+          voluptate neque, curabitur dolor libero sodales vitae elit massa
+        </p>
+      </div>
+      <iframe class="about-video" width="330" height="180" src="https://www.youtube.com/embed/2ZKV6B03I0s"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+    <section id="team-members" class="section-white">
+      <div class="text-center">
+        <h2 class="text-center-title">team member</h2>
+        <p class="text-center-paragraph"> Lorem ipsum dolor sit amet, maecenas eget vestibulum
+          justo
+          imperdiet
+        </p>
+      </div>
+      <div class="team">
+        <div class="team-member">
+          <div class="team-image-container">
+            <img class="image" src="images/team_1.jpg" alt="teammember1">
+            <div class="team-contact-icons">
+              <div class="clearfix pbs">
                 <svg class="icon icon-facebook">
-                    <use xlink:href="#icon-facebook"></use>
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
-            </div>
-
-
-            <div class="clearfix pbs">
+              </div>
+              <div class="clearfix pbs">
                 <svg class="icon icon-twitter">
-                    <use xlink:href="#icon-twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
-            </div>
-
-
-            <div class="clearfix pbs">
+              </div>
+              <div class="clearfix pbs">
                 <svg class="icon icon-dribbble">
-                    <use xlink:href="#icon-dribbble"></use>
+                  <use xlink:href="#icon-dribbble"></use>
                 </svg>
-            </div>
-
-
-            <div class="clearfix pbs">
+              </div>
+              <div class="clearfix pbs">
                 <svg class="icon icon-behance">
-                    <use xlink:href="#icon-behance"></use>
+                  <use xlink:href="#icon-behance"></use>
                 </svg>
+              </div>
             </div>
-
-
-            <div class="clearfix pbs">
-                <svg class="icon icon-github">
-                    <use xlink:href="#icon-github"></use>
-                </svg>
-            </div>
-
-
-            <div class="clearfix pbs">
-                <svg class="icon icon-google-plus">
-                    <use xlink:href="#icon-google-plus"></use>
-                </svg>
-            </div>
-
-
+          </div>
+          <h2 class="team-member-name">Johnathan Doe</h2>
+          <h3 class="team-member-job">Designer</h3>
         </div>
-
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"
-        integrity="sha512-614k4+nIB+21iS2+QUeDh7T928egRNeNcjkKCdWPYmFCA3/mub3H6KoqIHAk8Pdm07S6uAPqWvXerPFVRYVB/Q=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
-        integrity="sha512-vWutwDjKJo+VMAA7IrS/ICTmVYXRMdqtXA27MSuPxGjkbYnKeUKPrIpfsAwIXCzaSDF/qRy/L85ko/yxW0AIiA=="
-        crossorigin="anonymous"></script>
-    <script src="animation.js"></script>
+        <div class="team-member">
+          <div class="team-image-container">
+            <img class="image" src="images/team_2.jpg" alt="teammeber2">
+            <div class="team-contact-icons">
+              <div class="clearfix pbs">
+                <svg class="icon icon-facebook">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </div>
+              <div class="clearfix pbs">
+                <svg class="icon icon-twitter">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </div>
+              <div class="clearfix pbs">
+                <svg class="icon icon-dribbble">
+                  <use xlink:href="#icon-dribbble"></use>
+                </svg>
+              </div>
+              <div class="clearfix pbs">
+                <svg class="icon icon-behance">
+                  <use xlink:href="#icon-behance"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <h2 class="team-member-name">Jenny L Martian</h2>
+          <h3 class="team-member-job">UX Designer</h3>
+        </div>
+        <div class="team-member">
+          <div class="team-image-container">
+            <img class="image" src="images/team_3.jpg" alt="teammeber3">
+            <div class="team-contact-icons">
+              <div class="clearfix pbs">
+                <svg class="icon icon-facebook">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </div>
+              <div class="clearfix pbs">
+                <svg class="icon icon-twitter">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </div>
+              <div class="clearfix pbs">
+                <svg class="icon icon-dribbble">
+                  <use xlink:href="#icon-dribbble"></use>
+                </svg>
+              </div>
+              <div class="clearfix pbs">
+                <svg class="icon icon-behance">
+                  <use xlink:href="#icon-behance"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <h2 class="team-member-name">James David Doe</h2>
+          <h3 class="team-member-job">Creative Director</h3>
+        </div>
+      </div>
+    </section>
+    <section id="portafolio" class="section-gray">
+      <div class="text-center">
+        <h2 class="text-center-title">Lastest Work</h2>
+        <p class="text-center-paragraph"> Lorem ipsum dolor sit amet, maecenas eget vestibulum
+          justo
+          imperdiet
+        </p>
+      </div>
+      <div class="portafolio-images">
+        <div class="team-image-container">
+          <img class="image" src="images/portfolio-img1.jpg" alt="galleryimage1">
+          <div class="portafolio-ilustration">
+            <div class="portafolio-ilustration-content">
+              <div class="portafolio-icon">
+                <svg class="icon icon-link">
+                  <use xlink:href="#icon-link"></use>
+                </svg>
+              </div>
+              <h2 class="portafolio-ilustration-title">Ilustration</h2>
+              <h3 class="portafolio-ilustration-subtitle">Graphic / Ilustration / Poster</h3>
+            </div>
+          </div>
+        </div>
+        <div class="team-image-container">
+          <img class="image" src="images/portfolio-img2.jpg" alt="galleryimage2">
+          <div class="portafolio-ilustration">
+            <div class="portafolio-ilustration-content">
+              <div class="portafolio-icon">
+                <svg class="icon icon-link">
+                  <use xlink:href="#icon-link"></use>
+                </svg>
+              </div>
+              <h2 class="portafolio-ilustration-title">Ilustration</h2>
+              <h3 class="portafolio-ilustration-subtitle">Graphic / Ilustration / Poster</h3>
+            </div>
+          </div>
+        </div>
+        <div class="team-image-container">
+          <img class="image" src="images/portfolio-img3.jpg" alt="galleryimage3">
+          <div class="portafolio-ilustration">
+            <div class="portafolio-ilustration-content">
+              <div class="portafolio-icon">
+                <svg class="icon icon-link">
+                  <use xlink:href="#icon-link"></use>
+                </svg>
+              </div>
+              <h2 class="portafolio-ilustration-title">Ilustration</h2>
+              <h3 class="portafolio-ilustration-subtitle">Graphic / Ilustration / Poster</h3>
+            </div>
+          </div>
+        </div>
+        <div class="team-image-container">
+          <img class="image" src="images/portfolio-img4.jpg" alt="galleryimage4">
+          <div class="portafolio-ilustration">
+            <div class="portafolio-ilustration-content">
+              <div class="portafolio-icon">
+                <svg class="icon icon-link">
+                  <use xlink:href="#icon-link"></use>
+                </svg>
+              </div>
+              <h2 class="portafolio-ilustration-title">Ilustration</h2>
+              <h3 class="portafolio-ilustration-subtitle">Graphic / Ilustration / Poster</h3>
+            </div>
+          </div>
+        </div>
+        <div class="team-image-container">
+          <img class="image" src="images/portfolio-img5.jpg" alt="galleryimage5">
+          <div class="portafolio-ilustration">
+            <div class="portafolio-ilustration-content">
+              <div class="portafolio-icon">
+                <svg class="icon icon-link">
+                  <use xlink:href="#icon-link"></use>
+                </svg>
+              </div>
+              <h2 class="portafolio-ilustration-title">Ilustration</h2>
+              <h3 class="portafolio-ilustration-subtitle">Graphic / Ilustration / Poster</h3>
+            </div>
+          </div>
+        </div>
+        <div class="team-image-container">
+          <img class="image" src="images/portfolio-img6.jpg" alt="galleryimage6">
+          <div class="portafolio-ilustration">
+            <div class="portafolio-ilustration-content">
+              <div class="portafolio-icon">
+                <svg class="icon icon-link">
+                  <use xlink:href="symbols.svg#icon-link"></use>
+                </svg>
+              </div>
+              <h2 class="portafolio-ilustration-title">Ilustration</h2>
+              <h3 class="portafolio-ilustration-subtitle">Graphic / Ilustration / Poster</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="section-white">
+      <div class="text-center">
+        <h2 class="text-center-title">Our Blog</h2>
+        <p class="text-center-paragraph"> Lorem ipsum dolor sit amet, maecenas eget vestibulum
+          justo
+          imperdiet
+        </p>
+      </div>
+      <div class="blog-comments">
+        <div class="blog-comment">
+          <h3 class="blog-comment-date">Online Business/Dec 9,2016</h3>
+          <h2 class="blog-comment-description"> The best way to make Online Business</h2>
+          <h3 class="blog-comment-author">By Johnathan Doe</h3>
+        </div>
+        <div class="blog-comment">
+          <h3 class="blog-comment-date">Frontend Dev/Dec 9,2016</h3>
+          <h2 class="blog-comment-description"> Frontend Developer Vs UI Designer</h2>
+          <h3 class="blog-comment-author">By Johnny James</h3>
+        </div>
+        <div class="blog-comment-exception">
+          <div class="blog-comment">
+            <h3 class="blog-comment-date">Social Marketing/Dec 9,2016</h3>
+            <h2 class="blog-comment-description"> What is Social Marketing Business</h2>
+            <h3 class="blog-comment-author">By Mary Louis</h3>
+          </div>
+          <div class="blog-comment">
+            <h3 class="blog-comment-date">Web Design/Dec 9,2016</h3>
+            <h2 class="blog-comment-description"> How to become Web Designer</h2>
+            <h3 class="blog-comment-author">By David Jenn</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="asked-questions" class="asked-questions section-gray">
+      <div class="text-center">
+        <h2 class="text-center-title">Asked Questions</h2>
+        <p class="text-center-paragraph"> Lorem ipsum dolor sit amet, maecenas eget vestibulum
+          justo
+          imperdiet
+        </p>
+      </div>
+      <div class="questions">
+        <div class="question" onclick="dropDown(this)">
+          <div class="question-glyph">
+            <div class="fs1" aria-hidden="true" data-icon="&#xe001;&nbsp;&nbsp;">
+              How to make Brand Identity?
+            </div>
+          </div>
+          <div class="question-answer">
+            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum
+              justo
+              imperdiet, wisi risus purus auge
+              vulputate
+              voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
+              amet,
+              maecenas
+              eget vestibulum
+              justo
+              imperdiet.
+            </p>
+            <p>Lorem ipsum dolor sit amet,
+              maecenas
+              eget vestibulum
+              justo
+              imperdiet
+            </p>
+          </div>
+        </div>
+        <div class="question" onclick="dropDown(this)">
+          <div class="question-glyph">
+            <div class="fs1" aria-hidden="true" data-icon="&#xe01b;&nbsp;&nbsp;">
+              What is Web Design?
+            </div>
+          </div>
+          <div class="question-answer">
+            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum
+              justo
+              imperdiet, wisi risus purus auge
+              vulputate
+              voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
+              amet,
+              maecenas
+              eget vestibulum
+              justo
+              imperdiet.
+            </p>
+            <p>Lorem ipsum dolor sit amet,
+              maecenas
+              eget vestibulum
+              justo
+              imperdiet
+            </p>
+          </div>
+        </div>
+        <div class="question" onclick="dropDown(this)">
+          <div class="question-glyph">
+            <div class="fs1" aria-hidden="true" data-icon="&#xe04b;&nbsp;&nbsp;">
+              Why Important Social Marketing?
+            </div>
+          </div>
+          <div class="question-answer">
+            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum
+              justo
+              imperdiet, wisi risus purus auge
+              vulputate
+              voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
+              amet,
+              maecenas
+              eget vestibulum
+              justo
+              imperdiet.
+            </p>
+            <p>Lorem ipsum dolor sit amet,
+              maecenas
+              eget vestibulum
+              justo
+              imperdiet
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial" class="testimonial section-white">
+      <div class="text-center">
+        <h2 class="text-center-title">Testimonial Words</h2>
+        <p class="text-center-paragraph"> Lorem ipsum dolor sit amet, maecenas eget vestibulum
+          justo
+          imperdiet
+        </p>
+      </div>
+      <div class="first-testimonial">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="testimony-photo-container">
+              <img class="testimony-photo" src="images/testimonial-img1.jpg" alt="testimonypic1">
+            </div>
+            <div class="testimony-text">
+              <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
+                justo
+                imperdiet, wisi risus purus auge
+                vulputate
+                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
+                amet
+              </div>
+              <div class="testimony-author"> Johnathan Doe</div>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="testimony-photo-container">
+              <img class="testimony-photo" src="images/testimonial-img2.jpg" alt="testimonypic2">
+            </div>
+            <div class="testimony-text">
+              <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
+                justo
+                imperdiet, wisi risus purus auge
+                vulputate
+                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
+                amet
+              </div>
+              <div class="testimony-author"> Jennie Hennings</div>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="testimony-photo-container">
+              <img class="testimony-photo" src="images/testimonial-img3.jpg" alt="testimonypic3">
+            </div>
+            <div class="testimony-text">
+              <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
+                justo
+                imperdiet, wisi risus purus auge
+                vulputate
+                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
+                amet
+              </div>
+              <div class="testimony-author"> James Autor</div>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="testimony-photo-container">
+              <img class="testimony-photo" src="images/testimonial-img1.jpg" alt="testimonypic1">
+            </div>
+            <div class="testimony-text">
+              <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
+                justo
+                imperdiet, wisi risus purus auge
+                vulputate
+                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
+                amet
+              </div>
+              <div class="testimony-author"> Johnathan Doe</div>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="testimony-photo-container">
+              <img class="testimony-photo" src="images/testimonial-img2.jpg" alt="testimonypic2">
+            </div>
+            <div class="testimony-text">
+              <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget vestibulum
+                justo
+                imperdiet, wisi risus purus auge
+                vulputate
+                voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
+                amet
+              </div>
+              <div class="testimony-author"> Jennie Hennings</div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+      <div class="second-testimonial">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="testimony-item">
+              <div class="testimony">
+                <div class="testimony-photo-container">
+                  <img class="testimony-photo" src="images/testimonial-img1.jpg" alt="testimonypic1">
+                </div>
+                <div class="testimony-text">
+                  <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget
+                    vestibulum
+                    justo
+                    imperdiet, wisi risus purus auge
+                    vulputate
+                    voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
+                    dolor
+                    sit
+                    amet
+                  </div>
+                  <div class="testimony-author"> Johnathan Doe</div>
+                </div>
+              </div>
+              <div class="testimony">
+                <div class="testimony-photo-container">
+                  <img class="testimony-photo" src="images/testimonial-img2.jpg" alt="testimonypic2">
+                </div>
+                <div class="testimony-text">
+                  <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget
+                    vestibulum
+                    justo
+                    imperdiet, wisi risus purus auge
+                    vulputate
+                    voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
+                    dolor
+                    sit
+                    amet
+                  </div>
+                  <div class="testimony-author"> Johnny David</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="testimony-item">
+              <div class="testimony">
+                <div class="testimony-photo-container">
+                  <img class="testimony-photo" src="images/testimonial-img3.jpg" alt="testimonypic3">
+                </div>
+                <div class="testimony-text">
+                  <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget
+                    vestibulum
+                    justo
+                    imperdiet, wisi risus purus auge
+                    vulputate
+                    voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
+                    dolor
+                    sit
+                    amet
+                  </div>
+                  <div class="testimony-author"> James Autor</div>
+                </div>
+              </div>
+              <div class="testimony">
+                <div class="testimony-photo-container">
+                  <img class="testimony-photo" src="images/testimonial-img1.jpg" alt="testimonypic1">
+                </div>
+                <div class="testimony-text">
+                  <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget
+                    vestibulum
+                    justo
+                    imperdiet, wisi risus purus auge
+                    vulputate
+                    voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
+                    dolor
+                    sit
+                    amet
+                  </div>
+                  <div class="testimony-author"> Johnathan Doe</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="testimony-item">
+              <div class="testimony">
+                <div class="testimony-photo-container">
+                  <img class="testimony-photo" src="images/testimonial-img2.jpg" alt="testimonypic2">
+                </div>
+                <div class="testimony-text">
+                  <div class="testimony-description">Lorem ipsum dolor sit amet, maecenas eget
+                    vestibulum
+                    justo
+                    imperdiet, wisi risus purus auge
+                    vulputate
+                    voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum
+                    dolor
+                    sit
+                    amet
+                  </div>
+                  <div class="testimony-author"> Johnny David</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section-gray">
+      <div class="text-center">
+        <h2 class="text-center-title">Get in touch</h2>
+        <p class="text-center-paragraph"> Lorem ipsum dolor sit amet, maecenas eget vestibulum
+          justo
+          imperdiet
+        </p>
+      </div>
+      <div class="contact-form">
+        <div class="input-text">
+          <input class="contact-form-data" type="text" placeholder="Name">
+          <input class="contact-form-data" type="text" placeholder="Email">
+          <input class="contact-form-data" type="text" placeholder="Phone">
+        </div>
+        <textarea class="contact-form-message" name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
+      </div>
+      <button type="submit" class="contact-button-sub">SHOOT MESSAGE</button>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h4 class="copyright">Copyright© Talos HTML Template| All Rights Reserved.</h4>
+    </div>
+    <div class="footer-icons">
+      <div class="clearfix pbs">
+        <svg class="icon icon-facebook">
+          <use xlink:href="symbols.svg#icon-facebook"></use>
+        </svg>
+      </div>
+      <div class="clearfix pbs">
+        <svg class="icon icon-twitter">
+          <use xlink:href="symbols.svg#icon-twitter"></use>
+        </svg>
+      </div>
+      <div class="clearfix pbs">
+        <svg class="icon icon-dribbble">
+          <use xlink:href="symbols.svg#icon-dribbble"></use>
+        </svg>
+      </div>
+      <div class="clearfix pbs">
+        <svg class="icon icon-behance">
+          <use xlink:href="symbols.svg#icon-behance"></use>
+        </svg>
+      </div>
+      <div class="clearfix pbs">
+        <svg class="icon icon-github">
+          <use xlink:href="symbols.svg#icon-github"></use>
+        </svg>
+      </div>
+      <div class="clearfix pbs">
+        <svg class="icon icon-google-plus">
+          <use xlink:href="symbols.svg#icon-google-plus"></use>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script defer src="svgxuse.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"
+    integrity="sha512-614k4+nIB+21iS2+QUeDh7T928egRNeNcjkKCdWPYmFCA3/mub3H6KoqIHAk8Pdm07S6uAPqWvXerPFVRYVB/Q=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+    integrity="sha512-vWutwDjKJo+VMAA7IrS/ICTmVYXRMdqtXA27MSuPxGjkbYnKeUKPrIpfsAwIXCzaSDF/qRy/L85ko/yxW0AIiA=="
+    crossorigin="anonymous"></script>
+  <script src="animation.js"></script>
 </body>
 
 </html>

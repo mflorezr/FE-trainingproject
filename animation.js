@@ -1,126 +1,108 @@
 var toggleButton = document.querySelector(".toggle-but");
-var testimonial = document.querySelector(".testimonial-1");
+var testimonial = document.querySelector(".first-testimonial");
 var nav = document.querySelector(".nav-bar");
 var questions = document.querySelectorAll(".question");
 var main = document.querySelector("main");
-var slideIndex = 1;
+const buttonLink = document.querySelectorAll(".nav-bar-items li");
+const section = ["#carrousel-images", "#services", "#about", "#team-members", "#portafolio",
+  "#blog", "#asked-questions", "#testimonial", "#contact"
+];
+var controller = new ScrollMagic.Controller({
+  globalSceneOptions: {
+    duration: "100%"
+  }
+});
 
+currentSection();
+firstSlide();
 
-//Show the first testimonial slider of every device
-if(($(testimonial).is(" :hidden"))){
-    showSlides(slideIndex=6);
+function firstSlide() {
+  if (($(testimonial).is(" :hidden"))) {
+    showSlides(6);
+  } else {
+    showSlides(1);
+  }
 }
-else{
-    showSlides(slideIndex=1);
+
+function currentSection() {
+  let j = 0;
+  let i = 0;
+  for (i = 0; i < section.length; i++) {
+    if (section[i] === '#asked-questions' || section[i] === '#testimonial') {
+      j = 5;
+    }
+    new ScrollMagic.Scene({
+        triggerElement: section[i]
+      })
+      .setClassToggle('#' + buttonLink[j].id, "active-link") // add class toggle
+      .addTo(controller);
+    j++;
+  }
 }
 
-
-// Allows to change font color of nav-bar items depending of the page section
-var controller = new ScrollMagic.Controller({ globalSceneOptions: { duration: "100%" } });
-
-new ScrollMagic.Scene({ triggerElement: "#carrousel-images" })
-    .setClassToggle("#home-link", "active-link") // add class toggle
-    .addTo(controller);
-new ScrollMagic.Scene({ triggerElement: "#services" })
-    .setClassToggle("#services-link", "active-link") // add class toggle
-    .addTo(controller);
-new ScrollMagic.Scene({ triggerElement: "#about" })
-    .setClassToggle("#about-link", "active-link") // add class toggle
-    .addTo(controller);
-new ScrollMagic.Scene({ triggerElement: "#team-members" })
-    .setClassToggle("#team-link", "active-link") // add class toggle
-    .addTo(controller);
-new ScrollMagic.Scene({ triggerElement: "#portafolio" })
-    .setClassToggle("#portafolio-link", "active-link") // add class toggle
-    .addTo(controller);
-new ScrollMagic.Scene({ triggerElement: "#blog" })
-    .setClassToggle("#blog-link", "active-link") // add class toggle
-    .addTo(controller);
-new ScrollMagic.Scene({ triggerElement: "#asked-questions" })
-    .setClassToggle("#blog-link", "active-link") // add class toggle
-    .addTo(controller);
-new ScrollMagic.Scene({ triggerElement: "#testimonial" })
-    .setClassToggle("#blog-link", "active-link") // add class toggle
-    .addTo(controller);
-new ScrollMagic.Scene({ triggerElement: "#contact" })
-    .setClassToggle("#contact-link", "active-link") // add class toggle
-    .addTo(controller);
-
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(slideIndex) {
+  showSlides(slideIndex);
 }
 
 // Allows to fade the slide of testimonial words
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "flex";  
-  
-  dots[slideIndex-1].className += " active";
+function showSlides(slideIndex) {
+  const slides = document.querySelectorAll(".mySlides");
+  const dots = document.querySelectorAll(".dot");
+  slides.forEach(slide => {
+    if (slide.classList.contains("active-slide")) {
+      slide.classList.remove("active-slide");
+    }
+  });
+  dots.forEach(dot => {
+    if (dot.classList.contains("active")) {
+      dot.classList.remove("active");
+    }
+  });
+  slides[slideIndex - 1].classList.add("active-slide");
+  dots[slideIndex - 1].classList.add("active");
 }
-
 
 closeAll();
 
-//Allows to slideup and slideup asked questions after click on them
-questions.forEach(element => {
-    element.addEventListener("click", function(){
-        closeAll();
-        var text = element.childNodes[3];
-        if ($(text).is(':visible')){
-            $(text).slideUp();
-        } else{
-            $(text).slideDown();
-        }
-    });
-});
+function dropDown(element) {
+  closeAll();
+  var text = element.childNodes[3];
+  if ($(text).is(':visible')) {
+    $(text).slideUp();
+  } else {
+    $(text).slideDown();
+  }
+}
 
 // Close all asked questions before drop down the next question
-function closeAll(){
-    questions.forEach(element => {
-        var text = element.querySelector(".question-answer");
-        $(text).slideUp();
-    });
+function closeAll() {
+  questions.forEach(element => {
+    var text = element.querySelector(".question-answer");
+    $(text).slideUp();
+  });
 };
 
 // Drop down the page main menu when toggle button is clicked(mobile version)
-toggleButton.addEventListener("click", function() {
-    if ($(nav).is(':visible')){
-        $(nav).slideUp();
-    } else{
-        $(nav).slideDown();
-    }
+toggleButton.addEventListener("click", function () {
+  if ($(nav).is(':visible')) {
+    $(nav).slideUp();
+  } else {
+    $(nav).slideDown();
+  }
 });
 
 // Drop down the page main menu when toggle button is clicked(mobile version)
-nav.addEventListener("click", function() {
-    if ($(nav).is(':visible')){
-        $(nav).slideUp();
-    } 
+nav.addEventListener("click", function () {
+  if ($(nav).is(':visible')) {
+    $(nav).slideUp();
+  }
 });
 
 //Close page main menu when you click outside
-main.addEventListener("click", function() {
-    if(!($(toggleButton).is(" :hidden"))){
-    if ($(nav).is(':visible')){
-        $(nav).slideUp();
-    } 
-}
+main.addEventListener("click", function () {
+  if (!($(toggleButton).is(" :hidden"))) {
+    if ($(nav).is(':visible')) {
+      $(nav).slideUp();
+    }
+  }
 });
-
-
-
-
-
-
- 
