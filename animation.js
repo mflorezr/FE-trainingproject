@@ -34,7 +34,7 @@ function currentSection() {
     new ScrollMagic.Scene({
         triggerElement: section[i]
       })
-      .setClassToggle('#' + buttonLink[j].id, "active-link") // add class toggle
+      .setClassToggle('#' + buttonLink[j].id, "active-link") 
       .addTo(controller);
     j++;
   }
@@ -44,7 +44,6 @@ function currentSlide(slideIndex) {
   showSlides(slideIndex);
 }
 
-// Allows to fade the slide of testimonial words
 function showSlides(slideIndex) {
   const slides = document.querySelectorAll(".mySlides");
   const dots = document.querySelectorAll(".dot");
@@ -74,7 +73,6 @@ function dropDown(element) {
   }
 }
 
-// Close all asked questions before drop down the next question
 function closeAll() {
   questions.forEach(element => {
     var text = element.querySelector(".question-answer");
@@ -82,7 +80,6 @@ function closeAll() {
   });
 };
 
-// Drop down the page main menu when toggle button is clicked(mobile version)
 toggleButton.addEventListener("click", function () {
   if ($(nav).is(':visible')) {
     $(nav).slideUp();
@@ -91,14 +88,12 @@ toggleButton.addEventListener("click", function () {
   }
 });
 
-// Drop down the page main menu when toggle button is clicked(mobile version)
 nav.addEventListener("click", function () {
   if ($(nav).is(':visible')) {
     $(nav).slideUp();
   }
 });
 
-//Close page main menu when you click outside
 main.addEventListener("click", function () {
   if (!($(toggleButton).is(" :hidden"))) {
     if ($(nav).is(':visible')) {
