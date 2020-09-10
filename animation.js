@@ -2,7 +2,6 @@ var toggleButton = document.querySelector(".toggle-but");
 var testimonial = document.querySelector(".first-testimonial");
 var nav = document.querySelector(".nav-bar");
 var questions = document.querySelectorAll(".question");
-var main = document.querySelector("main");
 const buttonLink = document.querySelectorAll(".nav-bar-items li");
 const section = ["#carrousel-images", "#services", "#about", "#team-members", "#portafolio",
   "#blog", "#asked-questions", "#testimonial", "#contact"
@@ -17,7 +16,7 @@ currentSection();
 firstSlide();
 
 function firstSlide() {
-  if (($(testimonial).is(" :hidden"))) {
+  if (($(testimonial).is(' :hidden'))) {
     showSlides(6);
   } else {
     showSlides(1);
@@ -25,18 +24,18 @@ function firstSlide() {
 }
 
 function currentSection() {
-  let j = 0;
-  let i = 0;
-  for (i = 0; i < section.length; i++) {
-    if (section[i] === '#asked-questions' || section[i] === '#testimonial') {
-      j = 5;
+  let jButtonLink = 0;
+  let iSection = 0;
+  for (iSection = 0; iSection < section.length; iSection++) {
+    if (section[iSection] === '#asked-questions' || section[iSection] === '#testimonial') {
+      jButtonLink = 5;
     }
     new ScrollMagic.Scene({
-        triggerElement: section[i]
+        triggerElement: section[iSection]
       })
-      .setClassToggle('#' + buttonLink[j].id, "active-link") 
+      .setClassToggle('#' + buttonLink[jButtonLink].id, 'active-link') 
       .addTo(controller);
-    j++;
+    jButtonLink++;
   }
 }
 
@@ -48,17 +47,17 @@ function showSlides(slideIndex) {
   const slides = document.querySelectorAll(".mySlides");
   const dots = document.querySelectorAll(".dot");
   slides.forEach(slide => {
-    if (slide.classList.contains("active-slide")) {
-      slide.classList.remove("active-slide");
+    if (slide.classList.contains('active-slide')) {
+      slide.classList.remove('active-slide');
     }
   });
   dots.forEach(dot => {
-    if (dot.classList.contains("active")) {
-      dot.classList.remove("active");
+    if (dot.classList.contains('active')) {
+      dot.classList.remove('active');
     }
   });
-  slides[slideIndex - 1].classList.add("active-slide");
-  dots[slideIndex - 1].classList.add("active");
+  slides[slideIndex - 1].classList.add('active-slide');
+  dots[slideIndex - 1].classList.add('active');
 }
 
 closeAll();
@@ -80,24 +79,24 @@ function closeAll() {
   });
 };
 
-toggleButton.addEventListener("click", function () {
+function toggleClick() {
   if ($(nav).is(':visible')) {
     $(nav).slideUp();
   } else {
     $(nav).slideDown();
   }
-});
+};
 
-nav.addEventListener("click", function () {
+function navClick() {
   if ($(nav).is(':visible')) {
     $(nav).slideUp();
   }
-});
+};
 
-main.addEventListener("click", function () {
-  if (!($(toggleButton).is(" :hidden"))) {
+function closeToggle() {
+  if (!($(toggleButton).is(' :hidden'))) {
     if ($(nav).is(':visible')) {
       $(nav).slideUp();
     }
   }
-});
+};
