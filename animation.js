@@ -1,3 +1,7 @@
+import $ from 'jquery';
+import ScrollMagic from 'scrollmagic';
+import 'svgxuse';
+
 var toggleButton = document.querySelector(".toggle-but");
 var testimonial = document.querySelector(".first-testimonial");
 var nav = document.querySelector(".nav-bar");
@@ -12,10 +16,8 @@ var controller = new ScrollMagic.Controller({
   }
 });
 
-currentSection();
-firstSlide();
 
-function firstSlide() {
+window.firstSlide = () => {
   if (($(testimonial).is(' :hidden'))) {
     showSlides(6);
   } else {
@@ -23,27 +25,11 @@ function firstSlide() {
   }
 }
 
-function currentSection() {
-  let jButtonLink = 0;
-  let iSection = 0;
-  for (iSection = 0; iSection < section.length; iSection++) {
-    if (section[iSection] === '#asked-questions' || section[iSection] === '#testimonial') {
-      jButtonLink = 5;
-    }
-    new ScrollMagic.Scene({
-        triggerElement: section[iSection]
-      })
-      .setClassToggle('#' + buttonLink[jButtonLink].id, 'active-link') 
-      .addTo(controller);
-    jButtonLink++;
-  }
-}
-
-function currentSlide(slideIndex) {
+window.currentSlide = (slideIndex) => {
   showSlides(slideIndex);
 }
 
-function showSlides(slideIndex) {
+window.showSlides = (slideIndex) => {
   const slides = document.querySelectorAll(".mySlides");
   const dots = document.querySelectorAll(".dot");
   slides.forEach(slide => {
@@ -60,9 +46,7 @@ function showSlides(slideIndex) {
   dots[slideIndex - 1].classList.add('active');
 }
 
-closeAll();
-
-function dropDown(element) {
+window.dropDown = (element) => {
   closeAll();
   var text = element.childNodes[3];
   if ($(text).is(':visible')) {
@@ -72,31 +56,51 @@ function dropDown(element) {
   }
 }
 
-function closeAll() {
+window.closeAll = () => {
   questions.forEach(element => {
     var text = element.querySelector(".question-answer");
     $(text).slideUp();
   });
-};
+}
 
-function toggleClick() {
+window.toggleClick = () => {
   if ($(nav).is(':visible')) {
     $(nav).slideUp();
   } else {
     $(nav).slideDown();
   }
-};
+}
 
-function navClick() {
+window.navClick = () => {
   if ($(nav).is(':visible')) {
     $(nav).slideUp();
   }
-};
+}
 
-function closeToggle() {
+window.closeToggle = () => {
   if (!($(toggleButton).is(' :hidden'))) {
     if ($(nav).is(':visible')) {
       $(nav).slideUp();
     }
   }
-};
+}
+
+window.currentSection = () => {
+  let jButtonLink = 0;
+  let iSection = 0;
+  for (iSection = 0; iSection < section.length; iSection++) {
+    if (section[iSection] === '#asked-questions' || section[iSection] === '#testimonial') {
+      jButtonLink = 5;
+    }
+    new ScrollMagic.Scene({
+        triggerElement: section[iSection]
+      })
+      .setClassToggle('#' + buttonLink[jButtonLink].id, 'active-link') 
+      .addTo(controller);
+    jButtonLink++;
+  }
+}
+
+currentSection();
+firstSlide();
+closeAll();
