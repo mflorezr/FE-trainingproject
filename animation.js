@@ -2,20 +2,19 @@ import $ from 'jquery';
 import ScrollMagic from 'scrollmagic';
 import 'svgxuse';
 
-var toggleButton = document.querySelector(".toggle-but");
-var testimonial = document.querySelector(".first-testimonial");
-var nav = document.querySelector(".nav-bar");
-var questions = document.querySelectorAll(".question");
-const buttonLink = document.querySelectorAll(".nav-bar-items li");
-const section = ["#carrousel-images", "#services", "#about", "#team-members", "#portafolio",
-  "#blog", "#asked-questions", "#testimonial", "#contact"
+var toggleButton = document.querySelector('.toggle-but');
+var testimonial = document.querySelector('.first-testimonial');
+var nav = document.querySelector('.nav-bar');
+var questions = document.querySelectorAll('.question');
+const buttonLink = document.querySelectorAll('.nav-bar-items li');
+const section = ['#carrousel-images', '#services', '#about', '#team-members', '#portafolio',
+  '#blog', '#asked-questions', '#testimonial', '#contact'
 ];
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
     duration: "100%"
   }
 });
-
 
 window.firstSlide = () => {
   if (($(testimonial).is(' :hidden'))) {
@@ -30,8 +29,8 @@ window.currentSlide = (slideIndex) => {
 }
 
 window.showSlides = (slideIndex) => {
-  const slides = document.querySelectorAll(".mySlides");
-  const dots = document.querySelectorAll(".dot");
+  const slides = document.querySelectorAll('.mySlides');
+  const dots = document.querySelectorAll('.dot');
   slides.forEach(slide => {
     if (slide.classList.contains('active-slide')) {
       slide.classList.remove('active-slide');
@@ -58,7 +57,7 @@ window.dropDown = (element) => {
 
 window.closeAll = () => {
   questions.forEach(element => {
-    var text = element.querySelector(".question-answer");
+    var text = element.querySelector('.question-answer');
     $(text).slideUp();
   });
 }
