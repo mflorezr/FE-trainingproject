@@ -10,7 +10,7 @@ const buttonLink = document.querySelectorAll('.nav-bar-items li');
 const section = ['#carrousel-images', '#services', '#about', '#team-members', '#portafolio',
   '#blog', '#asked-questions', '#testimonial', '#contact'
 ];
-var controller = new ScrollMagic.Controller({
+const controller = new ScrollMagic.Controller({
   globalSceneOptions: {
     duration: "100%"
   }
