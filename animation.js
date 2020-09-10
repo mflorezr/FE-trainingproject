@@ -71,8 +71,10 @@ window.toggleClick = () => {
 }
 
 window.navClick = () => {
-  if ($(nav).is(':visible')) {
-    $(nav).slideUp();
+  if (!($(toggleButton).is(' :hidden'))) {
+    if ($(nav).is(':visible')) {
+      $(nav).slideUp();
+    }
   }
 }
 
