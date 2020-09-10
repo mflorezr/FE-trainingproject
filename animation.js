@@ -2,10 +2,10 @@ import $ from 'jquery';
 import ScrollMagic from 'scrollmagic';
 import 'svgxuse';
 
-var toggleButton = document.querySelector('.toggle-but');
-var testimonial = document.querySelector('.first-testimonial');
-var nav = document.querySelector('.nav-bar');
-var questions = document.querySelectorAll('.question');
+const toggleButton = document.querySelector('.toggle-but');
+const testimonial = document.querySelector('.first-testimonial');
+const nav = document.querySelector('.nav-bar');
+const questions = document.querySelectorAll('.question');
 const buttonLink = document.querySelectorAll('.nav-bar-items li');
 const section = ['#carrousel-images', '#services', '#about', '#team-members', '#portafolio',
   '#blog', '#asked-questions', '#testimonial', '#contact'
